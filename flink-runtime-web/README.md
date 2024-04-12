@@ -17,7 +17,7 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-# Apache Flink Web Dashboard
+# IntFlink Web Dashboard
 
 The web dashboard is work in progress towards the new Flink runtime monitor. In particular, it will
 provide the following missing features of the current web dashboard:

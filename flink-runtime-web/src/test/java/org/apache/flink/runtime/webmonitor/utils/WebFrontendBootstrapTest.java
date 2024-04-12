@@ -86,7 +86,7 @@ class WebFrontendBootstrapTest {
             Tuple2<Integer, String> index =
                     HttpUtils.getFromHTTP("http://localhost:" + port + "/index.html");
             assertThat(200).isEqualTo(index.f0.intValue());
-            assertThat(index.f1.contains("Apache Flink Web Dashboard")).isTrue();
+            assertThat(index.f1.contains("IntFlink Web Dashboard")).isTrue();
 
             Tuple2<Integer, String> index2 =
                     HttpUtils.getFromHTTP("http://localhost:" + port + "/nonExisting");

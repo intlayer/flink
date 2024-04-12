@@ -127,7 +127,7 @@ class WebFrontendITCase {
     @Test
     void getFrontPage(@InjectClusterRESTAddress URI restAddress) throws Exception {
         String fromHTTP = getFromHTTP("http://localhost:" + restAddress.getPort() + "/index.html");
-        assertThat(fromHTTP).contains("Apache Flink Web Dashboard");
+        assertThat(fromHTTP).contains("IntFlink Web Dashboard");
     }
 
     @Test

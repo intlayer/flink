@@ -68,7 +68,7 @@ class HistoryServerStaticFileServerHandlerTest {
             Tuple2<Integer, String> index =
                     HttpUtils.getFromHTTP("http://localhost:" + port + "/index.html");
             assertThat(index.f0).isEqualTo(200);
-            assertThat(index.f1).contains("Apache Flink Web Dashboard");
+            assertThat(index.f1).contains("IntFlink Web Dashboard");
 
             // verify that index.html is appended if the request path ends on '/'
             Tuple2<Integer, String> index2 =
