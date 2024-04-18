@@ -140,7 +140,7 @@ under the License.
 							<!-- This example is temporarily preserved only for testing purpose. -->
 							<excludes>
 								<exclude>
-									org/apache/flink/streaming/examples/iteration/IterateExample.java
+									org/intlayer/flink/streaming/examples/iteration/IterateExample.java
 								</exclude>
 							</excludes>
 						</configuration>
@@ -175,13 +175,13 @@ under the License.
 
 							<archive>
 								<manifestEntries>
-									<program-class>org.apache.flink.streaming.examples.join.WindowJoin</program-class>
+									<program-class>org.intlayer.flink.streaming.examples.join.WindowJoin</program-class>
 								</manifestEntries>
 							</archive>
 
 							<includes>
-								<include>org/apache/flink/streaming/examples/join/*.class</include>
-								<include>org/apache/flink/streaming/examples/utils/ThrottledIterator.class</include>
+								<include>org/intlayer/flink/streaming/examples/join/*.class</include>
+								<include>org/intlayer/flink/streaming/examples/utils/ThrottledIterator.class</include>
 								<include>META-INF/LICENSE</include>
 								<include>META-INF/NOTICE</include>
 							</includes>
@@ -200,15 +200,15 @@ under the License.
 
 							<archive>
 								<manifestEntries>
-									<program-class>org.apache.flink.streaming.examples.wordcount.WordCount</program-class>
+									<program-class>org.intlayer.flink.streaming.examples.wordcount.WordCount</program-class>
 								</manifestEntries>
 							</archive>
 
 							<includes>
-								<include>org/apache/flink/streaming/examples/wordcount/WordCount.class</include>
-								<include>org/apache/flink/streaming/examples/wordcount/WordCount$*.class</include>
-								<include>org/apache/flink/streaming/examples/wordcount/util/WordCountData.class</include>
-								<include>org/apache/flink/streaming/examples/wordcount/util/CLI.class</include>
+								<include>org/intlayer/flink/streaming/examples/wordcount/WordCount.class</include>
+								<include>org/intlayer/flink/streaming/examples/wordcount/WordCount$*.class</include>
+								<include>org/intlayer/flink/streaming/examples/wordcount/util/WordCountData.class</include>
+								<include>org/intlayer/flink/streaming/examples/wordcount/util/CLI.class</include>
 								<include>META-INF/LICENSE</include>
 								<include>META-INF/NOTICE</include>
 							</includes>
@@ -227,13 +227,13 @@ under the License.
 
 							<archive>
 								<manifestEntries>
-									<program-class>org.apache.flink.streaming.examples.socket.SocketWindowWordCount</program-class>
+									<program-class>org.intlayer.flink.streaming.examples.socket.SocketWindowWordCount</program-class>
 								</manifestEntries>
 							</archive>
 
 							<includes>
-								<include>org/apache/flink/streaming/examples/socket/SocketWindowWordCount.class</include>
-								<include>org/apache/flink/streaming/examples/socket/SocketWindowWordCount$*.class</include>
+								<include>org/intlayer/flink/streaming/examples/socket/SocketWindowWordCount.class</include>
+								<include>org/intlayer/flink/streaming/examples/socket/SocketWindowWordCount$*.class</include>
 								<include>META-INF/LICENSE</include>
 								<include>META-INF/NOTICE</include>
 							</includes>
@@ -271,8 +271,8 @@ under the License.
 								<filter>
 									<artifact>org.apache.flink:*</artifact>
 									<includes>
-										<include>org/apache/flink/connector/datagen/**</include>
-										<include>org/apache/flink/streaming/examples/async/*.class</include>
+										<include>org/intlayer/flink/connector/datagen/**</include>
+										<include>org/intlayer/flink/streaming/examples/async/*.class</include>
 										<include>META-INF/LICENSE</include>
 										<include>META-INF/NOTICE</include>
 									</includes>
@@ -280,7 +280,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.apache.flink.streaming.examples.async.AsyncIOExample</mainClass>
+									<mainClass>org.intlayer.flink.streaming.examples.async.AsyncIOExample</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -308,15 +308,15 @@ under the License.
 								<filter>
 									<artifact>org.apache.flink:*</artifact>
 									<includes>
-										<include>org/apache/flink/connector/datagen/**</include>
-										<include>org/apache/flink/streaming/examples/gpu/MatrixVectorMul.class</include>
-										<include>org/apache/flink/streaming/examples/gpu/MatrixVectorMul$*.class</include>
+										<include>org/intlayer/flink/connector/datagen/**</include>
+										<include>org/intlayer/flink/streaming/examples/gpu/MatrixVectorMul.class</include>
+										<include>org/intlayer/flink/streaming/examples/gpu/MatrixVectorMul$*.class</include>
 									</includes>
 								</filter>
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.apache.flink.streaming.examples.gpu.MatrixVectorMul</mainClass>
+									<mainClass>org.intlayer.flink.streaming.examples.gpu.MatrixVectorMul</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -343,8 +343,8 @@ under the License.
 								<filter>
 									<artifact>org.apache.flink:*</artifact>
 									<includes>
-										<include>org/apache/flink/connector/datagen/**</include>
-										<include>org/apache/flink/streaming/examples/iteration/*.class</include>
+										<include>org/intlayer/flink/connector/datagen/**</include>
+										<include>org/intlayer/flink/streaming/examples/iteration/*.class</include>
 										<include>META-INF/LICENSE</include>
 										<include>META-INF/NOTICE</include>
 									</includes>
@@ -352,7 +352,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.apache.flink.streaming.examples.iteration.IterateExample</mainClass>
+									<mainClass>org.intlayer.flink.streaming.examples.iteration.IterateExample</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -379,11 +379,11 @@ under the License.
 								<filter>
 									<artifact>org.apache.flink:*</artifact>
 									<includes>
-										<include>org/apache/flink/connector/datagen/**</include>
-										<include>org/apache/flink/streaming/examples/windowing/TopSpeedWindowing.class</include>
-										<include>org/apache/flink/streaming/examples/windowing/TopSpeedWindowing$*.class</include>
-										<include>org/apache/flink/streaming/examples/windowing/util/CarGeneratorFunction.class</include>
-										<include>org/apache/flink/streaming/examples/wordcount/util/CLI.class</include>
+										<include>org/intlayer/flink/connector/datagen/**</include>
+										<include>org/intlayer/flink/streaming/examples/windowing/TopSpeedWindowing.class</include>
+										<include>org/intlayer/flink/streaming/examples/windowing/TopSpeedWindowing$*.class</include>
+										<include>org/intlayer/flink/streaming/examples/windowing/util/CarGeneratorFunction.class</include>
+										<include>org/intlayer/flink/streaming/examples/wordcount/util/CLI.class</include>
 										<include>META-INF/LICENSE</include>
 										<include>META-INF/NOTICE</include>
 									</includes>
@@ -391,7 +391,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.apache.flink.streaming.examples.windowing.TopSpeedWindowing</mainClass>
+									<mainClass>org.intlayer.flink.streaming.examples.windowing.TopSpeedWindowing</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
@@ -418,9 +418,9 @@ under the License.
 								<filter>
 									<artifact>org.apache.flink:*</artifact>
 									<includes>
-										<include>org/apache/flink/connector/datagen/**</include>
-										<include>org/apache/flink/streaming/examples/windowing/SessionWindowing.class</include>
-										<include>org/apache/flink/streaming/examples/windowing/SessionWindowing$*.class</include>
+										<include>org/intlayer/flink/connector/datagen/**</include>
+										<include>org/intlayer/flink/streaming/examples/windowing/SessionWindowing.class</include>
+										<include>org/intlayer/flink/streaming/examples/windowing/SessionWindowing$*.class</include>
 										<include>META-INF/LICENSE</include>
 										<include>META-INF/NOTICE</include>
 									</includes>
@@ -428,7 +428,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.apache.flink.streaming.examples.windowing.SessionWindowing</mainClass>
+									<mainClass>org.intlayer.flink.streaming.examples.windowing.SessionWindowing</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
