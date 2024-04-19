@@ -19,8 +19,8 @@
 package org.intlayer.flink.streaming.examples.addresscredit.util;
 
 /**
- * Provides the default data sets used for the AddressCredit example program. The default data sets are
- * used, if no parameters are given to the program.
+ * Provides the default data sets used for the AddressCredit example program. The default data sets
+ * are used, if no parameters are given to the program.
  */
 public class AddressCreditData {
 

@@ -32,8 +32,8 @@ import java.util.Optional;
 import java.util.OptionalInt;
 
 /**
- * A simple CLI parser for the {@link org.intlayer.flink.streaming.examples.addresscredit.AddressCredit}
- * example application.
+ * A simple CLI parser for the {@link
+ * org.intlayer.flink.streaming.examples.addresscredit.AddressCredit} example application.
  */
 public class CLI extends ExecutionConfig.GlobalJobParameters {
 

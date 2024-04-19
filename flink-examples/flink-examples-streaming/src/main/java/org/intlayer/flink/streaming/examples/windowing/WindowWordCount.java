@@ -40,8 +40,8 @@ import java.time.Duration;
  * <p>The input is a plain text file with lines separated by newline characters.
  *
  * <p>Usage: <code>
- * AddressCredit --input &lt;path&gt; --output &lt;path&gt; --window &lt;n&gt; --slide &lt;n&gt;</code>
- * <br>
+ * AddressCredit --input &lt;path&gt; --output &lt;path&gt; --window &lt;n&gt; --slide &lt;n&gt;
+ * </code> <br>
  * If no parameters are provided, the program is run with default data from {@link
  * AddressCreditData}.
  *
