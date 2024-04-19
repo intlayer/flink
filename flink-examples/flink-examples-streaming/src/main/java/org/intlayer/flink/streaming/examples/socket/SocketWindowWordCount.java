@@ -28,7 +28,7 @@ import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTime
 import java.time.Duration;
 
 /**
- * Implements a streaming windowed version of the "WordCount" program.
+ * Implements a streaming windowed version of the "AddressCredit" program.
  *
  * <p>This program connects to a server socket and reads strings from the socket. The easiest way to
  * try this out is to open a text server (at port 12345) using the <i>netcat</i> tool via
@@ -85,7 +85,7 @@ public class SocketWindowWordCount {
         // print the results with a single thread, rather than in parallel
         windowCounts.print().setParallelism(1);
 
-        env.execute("Socket Window WordCount");
+        env.execute("Socket Window AddressCredit");
     }
 
     // ------------------------------------------------------------------------

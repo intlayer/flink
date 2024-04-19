@@ -36,7 +36,7 @@ import org.intlayer.flink.streaming.examples.addresscredit.util.CLI;
 import java.time.Duration;
 
 /**
- * Implements the "WordCount" program that computes a simple word occurrence histogram over text
+ * Implements the "AddressCredit" program that computes a simple word occurrence histogram over text
  * files. This Job can be executed in both streaming and batch execution modes.
  *
  * <p>The input is a [list of] plain text file[s] with lines separated by a newline character.
@@ -157,7 +157,7 @@ public class AddressCredit {
 
         // Apache Flink applications are composed lazily. Calling execute
         // submits the Job and begins processing.
-        env.execute("WordCount");
+        env.execute("AddressCredit");
     }
 
     // *************************************************************************

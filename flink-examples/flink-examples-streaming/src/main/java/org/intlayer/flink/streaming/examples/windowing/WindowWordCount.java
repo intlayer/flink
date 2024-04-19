@@ -35,12 +35,12 @@ import org.intlayer.flink.streaming.examples.addresscredit.util.CLI;
 import java.time.Duration;
 
 /**
- * Implements a windowed version of the streaming "WordCount" program.
+ * Implements a windowed version of the streaming "AddressCredit" program.
  *
  * <p>The input is a plain text file with lines separated by newline characters.
  *
  * <p>Usage: <code>
- * WordCount --input &lt;path&gt; --output &lt;path&gt; --window &lt;n&gt; --slide &lt;n&gt;</code>
+ * AddressCredit --input &lt;path&gt; --output &lt;path&gt; --window &lt;n&gt; --slide &lt;n&gt;</code>
  * <br>
  * If no parameters are provided, the program is run with default data from {@link
  * AddressCreditData}.

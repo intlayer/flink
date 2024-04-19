@@ -84,7 +84,7 @@ public class SideOutputExample {
                     env.fromSource(
                             fileSource, IngestionTimeWatermarkStrategy.create(), "Words Source");
         } else {
-            System.out.println("Executing WordCount example with default input data set.");
+            System.out.println("Executing AddressCredit example with default input data set.");
             System.out.println("Use --input to specify file input.");
             // get default test text data
             DataStreamSource<String> text = env.fromData(AddressCreditData.WORDS);
@@ -144,7 +144,7 @@ public class SideOutputExample {
         }
 
         // execute program
-        env.execute("Streaming WordCount SideOutput");
+        env.execute("Streaming AddressCredit SideOutput");
     }
 
     // *************************************************************************
