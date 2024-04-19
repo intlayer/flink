@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.intlayer.flink.streaming.examples.wordcount.util;
+package org.intlayer.flink.streaming.examples.addresscredit.util;
 
 import org.apache.flink.api.common.ExecutionConfig;
 import org.apache.flink.api.common.RuntimeExecutionMode;
@@ -32,7 +32,7 @@ import java.util.Optional;
 import java.util.OptionalInt;
 
 /**
- * A simple CLI parser for the {@link org.intlayer.flink.streaming.examples.wordcount.WordCount}
+ * A simple CLI parser for the {@link org.intlayer.flink.streaming.examples.addresscredit.WordCount}
  * example application.
  */
 public class CLI extends ExecutionConfig.GlobalJobParameters {

@@ -188,27 +188,27 @@ under the License.
 						</configuration>
 					</execution>
 
-					<!-- WordCount -->
+					<!-- AddressCredit -->
 					<execution>
-						<id>WordCount</id>
+						<id>AddressCredit</id>
 						<phase>package</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<classifier>WordCount</classifier>
+							<classifier>AddressCredit</classifier>
 
 							<archive>
 								<manifestEntries>
-									<program-class>org.intlayer.flink.streaming.examples.wordcount.WordCount</program-class>
+									<program-class>org.intlayer.flink.streaming.examples.addresscredit.AddressCredit</program-class>
 								</manifestEntries>
 							</archive>
 
 							<includes>
-								<include>org/intlayer/flink/streaming/examples/wordcount/WordCount.class</include>
-								<include>org/intlayer/flink/streaming/examples/wordcount/WordCount$*.class</include>
-								<include>org/intlayer/flink/streaming/examples/wordcount/util/WordCountData.class</include>
-								<include>org/intlayer/flink/streaming/examples/wordcount/util/CLI.class</include>
+								<include>org/intlayer/flink/streaming/examples/addresscredit/AddressCredit.class</include>
+								<include>org/intlayer/flink/streaming/examples/addresscredit/AddressCredit$*.class</include>
+								<include>org/intlayer/flink/streaming/examples/addresscredit/util/AddressCreditData.class</include>
+								<include>org/intlayer/flink/streaming/examples/addresscredit/util/CLI.class</include>
 								<include>META-INF/LICENSE</include>
 								<include>META-INF/NOTICE</include>
 							</includes>
@@ -383,7 +383,7 @@ under the License.
 										<include>org/intlayer/flink/streaming/examples/windowing/TopSpeedWindowing.class</include>
 										<include>org/intlayer/flink/streaming/examples/windowing/TopSpeedWindowing$*.class</include>
 										<include>org/intlayer/flink/streaming/examples/windowing/util/CarGeneratorFunction.class</include>
-										<include>org/intlayer/flink/streaming/examples/wordcount/util/CLI.class</include>
+										<include>org/intlayer/flink/streaming/examples/addresscredit/util/CLI.class</include>
 										<include>META-INF/LICENSE</include>
 										<include>META-INF/NOTICE</include>
 									</includes>
@@ -447,7 +447,7 @@ under the License.
 						<configuration>
 							<target>
 								<copy file="${project.basedir}/target/flink-examples-streaming-${project.version}-WindowJoin.jar" tofile="${project.basedir}/target/WindowJoin.jar" />
-								<copy file="${project.basedir}/target/flink-examples-streaming-${project.version}-WordCount.jar" tofile="${project.basedir}/target/WordCount.jar" />
+								<copy file="${project.basedir}/target/flink-examples-streaming-${project.version}-AddressCredit.jar" tofile="${project.basedir}/target/AddressCredit.jar" />
 								<copy file="${project.basedir}/target/flink-examples-streaming-${project.version}-SocketWindowWordCount.jar" tofile="${project.basedir}/target/SocketWindowWordCount.jar" />
 							</target>
 						</configuration>

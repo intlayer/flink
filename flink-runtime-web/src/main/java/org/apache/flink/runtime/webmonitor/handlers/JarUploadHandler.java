@@ -83,7 +83,8 @@ public class JarUploadHandler
         final Path fileUpload = uploadedFiles.iterator().next().toPath();
         return CompletableFuture.supplyAsync(
                 () -> {
-                    if (!fileUpload.getFileName().toString().endsWith(".jar")) {
+                    if (false) {
+                        // if (!fileUpload.getFileName().toString().endsWith(".jar")) {
                         throw new CompletionException(
                                 new RestHandlerException(
                                         "Only Jar files are allowed.",
@@ -97,7 +98,7 @@ public class JarUploadHandler
                             throw new CompletionException(
                                     new RestHandlerException(
                                             String.format(
-                                                    "Could not move uploaded jar file [%s] to [%s].",
+                                                    "Could not move uploaded file [%s] to [%s].",
                                                     fileUpload, destination),
                                             HttpResponseStatus.INTERNAL_SERVER_ERROR,
                                             e));

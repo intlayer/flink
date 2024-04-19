@@ -140,7 +140,7 @@ public class StreamingExamplesITCase extends AbstractTestBase {
         final String textPath = createTempFile("text.txt", WordCountData.TEXT);
         final String resultPath = getTempDirPath("result");
 
-        org.intlayer.flink.streaming.examples.wordcount.WordCount.main(
+        org.intlayer.flink.streaming.examples.addresscredit.AddressCredit.main(
                 new String[] {
                     "--input", textPath,
                     "--output", resultPath,

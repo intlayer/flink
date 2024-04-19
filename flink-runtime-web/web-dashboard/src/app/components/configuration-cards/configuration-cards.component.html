@@ -23,7 +23,7 @@
   ></flink-table-display>
 </nz-card>
 
-<nz-card nzType="inner" nzTitle="JVM" [nzLoading]="loading">
+<nz-card nzType="inner" nzTitle="ZKVM" [nzLoading]="loading">
   <flink-table-display
     *ngIf="environmentInfo; else noDataTemplate"
     [listOfData]="convertJVMToKV(environmentInfo.jvm)"

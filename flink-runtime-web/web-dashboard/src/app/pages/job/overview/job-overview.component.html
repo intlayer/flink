@@ -20,7 +20,7 @@
   *ngIf="nodes.length === 0"
   nzShowIcon
   nzType="info"
-  nzMessage="Job is not running yet."
+  nzMessage="DIJob is not running yet."
 ></nz-alert>
 <div class="container" [style.height.px]="top">
   <flink-dagre (nodeClick)="onNodeClick($event)" [xCenter]="4"></flink-dagre>

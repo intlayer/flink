@@ -44,7 +44,7 @@
       <td rowspan="8" class="table-header">
         <img src="assets/images/process_mem_model.svg" />
       </td>
-      <td class="table-header">JVM Heap</td>
+      <td class="table-header">ZKVM Heap</td>
       <td>{{ jmConfig['jobmanager.memory.heap.size'] | parseInt | humanizeBytes }}</td>
       <td>
         <nz-progress
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td class="table-header">JVM Metaspace</td>
+      <td class="table-header">ZKVM Metaspace</td>
       <td>{{ jmConfig['jobmanager.memory.jvm-metaspace.size'] | parseInt | humanizeBytes }}</td>
       <td>
         <nz-progress
@@ -101,7 +101,7 @@
       </td>
     </tr>
     <tr>
-      <td class="table-header">JVM Overhead</td>
+      <td class="table-header">ZKVM Overhead</td>
       <td>
         <ng-container
           *ngIf="
@@ -135,7 +135,7 @@
     <div nz-col [nzSpan]="12">
       <nz-table
         nzBordered
-        nzTitle="JVM (Heap/Non-Heap) Memory"
+        nzTitle="ZKVM (Heap/Non-Heap) Memory"
         [nzTemplateMode]="true"
         [nzFrontPagination]="false"
         [nzShowPagination]="false"
@@ -168,7 +168,7 @@
     <div nz-col [nzSpan]="12">
       <nz-table
         nzBordered
-        nzTitle="Outside JVM Memory"
+        nzTitle="Outside ZKVM Memory"
         [nzTemplateMode]="true"
         [nzFrontPagination]="false"
         [nzShowPagination]="false"

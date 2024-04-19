@@ -265,7 +265,7 @@ class JarRunHandlerParameterTest
 
                             final String exceptionMsg = invocationException.get().getMessage();
                             assertThat(exceptionMsg)
-                                    .contains("Job was submitted in detached mode.");
+                                    .contains("DIJob was submitted in detached mode.");
 
                             return true;
                         });

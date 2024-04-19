@@ -52,7 +52,7 @@ const OVERRIDE_JOB_MODULE_CONFIG_FACTORY = (statusService: StatusService): JobMo
           { title: 'Exceptions', path: 'exceptions' },
           { title: 'TimeLine', path: 'timeline' },
           { title: 'Checkpoints', path: 'checkpoints' },
-          { title: 'Job Configuration', path: 'configuration' },
+          { title: 'DIJob Configuration', path: 'configuration' },
           { title: 'Cluster Configuration', path: 'cluster_configuration' }
         ]
       : JOB_MODULE_DEFAULT_CONFIG.routerTabs

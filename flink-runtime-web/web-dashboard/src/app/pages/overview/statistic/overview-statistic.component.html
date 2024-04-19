@@ -52,7 +52,7 @@
     </nz-card>
   </div>
   <div nz-col [nzXs]="24" [nzSm]="24" [nzMd]="12" [nzLg]="12" [nzXl]="12" class="col">
-    <nz-card [nzBordered]="false" nzTitle="Running Jobs" [nzLoading]="!statistic">
+    <nz-card [nzBordered]="false" nzTitle="Running DIJobs" [nzLoading]="!statistic">
       <ng-container *ngIf="statistic">
         <div class="total">{{ statistic['jobs-running'] | number: '1.0-0' }}</div>
         <div class="footer">

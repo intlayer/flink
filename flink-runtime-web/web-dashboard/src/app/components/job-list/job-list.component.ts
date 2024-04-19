@@ -80,7 +80,7 @@ export class JobListComponent implements OnInit, OnDestroy, OnChanges {
 
   navigateToJob(job: JobsItem): void {
     if (job.state === 'INITIALIZING') {
-      this.nzMessageService.info('Job detail page is not available while it is in state INITIALIZING.');
+      this.nzMessageService.info('DIJob detail page is not available while it is in state INITIALIZING.');
     } else {
       this.navigate.emit(job);
     }

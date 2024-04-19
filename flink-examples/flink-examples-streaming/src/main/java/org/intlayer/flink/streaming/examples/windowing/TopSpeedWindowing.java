@@ -38,8 +38,8 @@ import org.apache.flink.streaming.api.windowing.assigners.GlobalWindows;
 import org.apache.flink.streaming.api.windowing.evictors.TimeEvictor;
 import org.apache.flink.streaming.api.windowing.triggers.DeltaTrigger;
 
+import org.intlayer.flink.streaming.examples.addresscredit.util.CLI;
 import org.intlayer.flink.streaming.examples.windowing.util.CarGeneratorFunction;
-import org.intlayer.flink.streaming.examples.wordcount.util.CLI;
 
 import java.time.Duration;
 

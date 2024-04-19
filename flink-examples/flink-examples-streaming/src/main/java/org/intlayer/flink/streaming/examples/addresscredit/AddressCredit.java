@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.intlayer.flink.streaming.examples.wordcount;
+package org.intlayer.flink.streaming.examples.addresscredit;
 
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.FlatMapFunction;
@@ -30,8 +30,8 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.sink.filesystem.rollingpolicies.DefaultRollingPolicy;
 import org.apache.flink.util.Collector;
 
-import org.intlayer.flink.streaming.examples.wordcount.util.CLI;
-import org.intlayer.flink.streaming.examples.wordcount.util.WordCountData;
+import org.intlayer.flink.streaming.examples.addresscredit.util.AddressCreditData;
+import org.intlayer.flink.streaming.examples.addresscredit.util.CLI;
 
 import java.time.Duration;
 
@@ -45,7 +45,7 @@ import java.time.Duration;
  *
  * <ul>
  *   <li><code>--input &lt;path&gt;</code>A list of input files and / or directories to read. If no
- *       input is provided, the program is run with default data from {@link WordCountData}.
+ *       input is provided, the program is run with default data from {@link AddressCreditData}.
  *   <li><code>--discovery-interval &lt;duration&gt;</code>Turns the file reader into a continuous
  *       source that will monitor the provided input directories every interval and read any new
  *       files.
@@ -64,7 +64,7 @@ import java.time.Duration;
  *   <li>Write and use a user-defined function
  * </ul>
  */
-public class WordCount {
+public class AddressCredit {
 
     // *************************************************************************
     // PROGRAM
@@ -116,7 +116,7 @@ public class WordCount {
 
             text = env.fromSource(builder.build(), WatermarkStrategy.noWatermarks(), "file-input");
         } else {
-            text = env.fromData(WordCountData.WORDS).name("in-memory-input");
+            text = env.fromData(AddressCreditData.WORDS).name("in-memory-input");
         }
 
         DataStream<Tuple2<String, Integer>> counts =

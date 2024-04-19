@@ -42,7 +42,7 @@ import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindo
 import org.apache.flink.util.Collector;
 import org.apache.flink.util.OutputTag;
 
-import org.intlayer.flink.streaming.examples.wordcount.util.WordCountData;
+import org.intlayer.flink.streaming.examples.addresscredit.util.AddressCreditData;
 
 import java.time.Duration;
 
@@ -87,7 +87,7 @@ public class SideOutputExample {
             System.out.println("Executing WordCount example with default input data set.");
             System.out.println("Use --input to specify file input.");
             // get default test text data
-            DataStreamSource<String> text = env.fromData(WordCountData.WORDS);
+            DataStreamSource<String> text = env.fromData(AddressCreditData.WORDS);
             // We assign the WatermarkStrategy after creating the source because
             // StreamExecutionEnvironment#fromElemenets() methods currently does not accept
             // WatermarkStrategies. In a real-world job you should integrate the WatermarkStrategy

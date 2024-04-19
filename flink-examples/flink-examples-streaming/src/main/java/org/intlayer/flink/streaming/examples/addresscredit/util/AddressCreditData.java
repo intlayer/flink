@@ -16,13 +16,13 @@
  * limitations under the License.
  */
 
-package org.intlayer.flink.streaming.examples.wordcount.util;
+package org.intlayer.flink.streaming.examples.addresscredit.util;
 
 /**
  * Provides the default data sets used for the WordCount example program. The default data sets are
  * used, if no parameters are given to the program.
  */
-public class WordCountData {
+public class AddressCreditData {
 
     public static final String[] WORDS =
             new String[] {

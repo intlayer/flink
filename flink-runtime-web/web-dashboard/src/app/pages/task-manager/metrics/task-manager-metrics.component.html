@@ -150,7 +150,7 @@
         </td>
       </tr>
       <tr>
-        <td class="table-header">JVM Overhead</td>
+        <td class="table-header">ZKVM Overhead</td>
         <td>{{ taskManagerDetail?.memoryConfiguration.jvmOverhead | humanizeBytes }}</td>
         <td>
           <i
@@ -169,7 +169,7 @@
     <div nz-col [nzSpan]="12">
       <nz-table
         nzBordered
-        nzTitle="JVM (Heap/Non-Heap) Memory"
+        nzTitle="ZKVM (Heap/Non-Heap) Memory"
         [nzTemplateMode]="true"
         [nzFrontPagination]="false"
         [nzShowPagination]="false"
@@ -203,7 +203,7 @@
     <div nz-col [nzSpan]="12">
       <nz-table
         nzBordered
-        nzTitle="Outside JVM Memory"
+        nzTitle="Outside ZKVM Memory"
         [nzTemplateMode]="true"
         [nzFrontPagination]="false"
         [nzShowPagination]="false"
@@ -395,7 +395,7 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Job ID</th>
+        <th>DIJob ID</th>
         <th>CPU (cores)</th>
         <th>Task Heap memory (MB)</th>
         <th>Task Off-Heap memory (MB)</th>

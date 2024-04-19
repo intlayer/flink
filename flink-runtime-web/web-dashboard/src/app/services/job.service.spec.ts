@@ -27,7 +27,7 @@ const clone = function (jobResourceRequirements: JobResourceRequirements): JobRe
   return JSON.parse(JSON.stringify(jobResourceRequirements));
 };
 
-describe('Job Service', () => {
+describe('DIJob Service', () => {
   let configService: ConfigService;
   let jobService: JobService;
   let httpTestingController: HttpTestingController;

@@ -28,9 +28,9 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.sink.filesystem.rollingpolicies.DefaultRollingPolicy;
 
-import org.intlayer.flink.streaming.examples.wordcount.WordCount;
-import org.intlayer.flink.streaming.examples.wordcount.util.CLI;
-import org.intlayer.flink.streaming.examples.wordcount.util.WordCountData;
+import org.intlayer.flink.streaming.examples.addresscredit.AddressCredit;
+import org.intlayer.flink.streaming.examples.addresscredit.util.AddressCreditData;
+import org.intlayer.flink.streaming.examples.addresscredit.util.CLI;
 
 import java.time.Duration;
 
@@ -42,7 +42,8 @@ import java.time.Duration;
  * <p>Usage: <code>
  * WordCount --input &lt;path&gt; --output &lt;path&gt; --window &lt;n&gt; --slide &lt;n&gt;</code>
  * <br>
- * If no parameters are provided, the program is run with default data from {@link WordCountData}.
+ * If no parameters are provided, the program is run with default data from {@link
+ * AddressCreditData}.
  *
  * <p>This example shows how to:
  *
@@ -103,7 +104,7 @@ public class WindowWordCount {
 
             text = env.fromSource(builder.build(), WatermarkStrategy.noWatermarks(), "file-input");
         } else {
-            text = env.fromData(WordCountData.WORDS).name("in-memory-input");
+            text = env.fromData(AddressCreditData.WORDS).name("in-memory-input");
         }
 
         int windowSize = params.getInt("window").orElse(250);
@@ -113,7 +114,7 @@ public class WindowWordCount {
                 // The text lines read from the source are split into words
                 // using a user-defined function. The tokenizer, implemented below,
                 // will output each words as a (2-tuple) containing (word, 1)
-                text.flatMap(new WordCount.Tokenizer())
+                text.flatMap(new AddressCredit.Tokenizer())
                         .name("tokenizer")
                         // keyBy groups tuples based on the "0" field, the word.
                         // Using a keyBy allows performing aggregations and other

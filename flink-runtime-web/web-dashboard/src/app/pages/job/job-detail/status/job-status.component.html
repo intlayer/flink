@@ -22,7 +22,7 @@
     <ng-container *ngIf="!statusTips">
       <a
         nz-popconfirm
-        nzPopconfirmTitle="Cancel Job?"
+        nzPopconfirmTitle="Cancel DIJob?"
         nzOkText="Yes"
         nzCancelText="No"
         (nzOnConfirm)="cancelJob()"
@@ -33,7 +33,7 @@
             jobDetail.state === 'RESTARTING')
         "
       >
-        Cancel Job
+        Cancel DIJob
       </a>
     </ng-container>
   </div>
@@ -47,8 +47,8 @@
     nzSize="small"
     [nzColumn]="{ xxl: 3, xl: 3, lg: 2, md: 2, sm: 1, xs: 1 }"
   >
-    <nz-descriptions-item nzTitle="Job ID">{{ jobDetail.jid }}</nz-descriptions-item>
-    <nz-descriptions-item nzTitle="Job State">
+    <nz-descriptions-item nzTitle="DIJob ID">{{ jobDetail.jid }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="DIJob State">
       <div class="status-wrapper">
         <flink-job-badge [state]="jobDetail.state"></flink-job-badge>
         <nz-divider nzType="vertical"></nz-divider>
@@ -61,10 +61,10 @@
         [routerLink]="['/job-manager', 'logs']"
         [queryParamsHandling]="'preserve'"
       >
-        Job Manager Log
+        DIJob Manager Log
       </a>
       <ng-template #historyServerActions>
-        <a [href]="jmLogUrl" *ngIf="!urlLoading">Job Manager Log</a>
+        <a [href]="jmLogUrl" *ngIf="!urlLoading">DIJob Manager Log</a>
         <span *ngIf="urlLoading">-</span>
       </ng-template>
     </nz-descriptions-item>

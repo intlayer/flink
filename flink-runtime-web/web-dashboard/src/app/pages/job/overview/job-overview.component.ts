@@ -122,7 +122,7 @@ export class JobOverviewComponent implements OnInit, OnDestroy {
     this.jobService.changeDesiredParallelism(this.jobId, desiredParallelism).subscribe(() => {
       this.notificationService.success(
         'Rescaling operation.',
-        'Job resources requirements have been updated. Job will now try to rescale.'
+        'DIJob resources requirements have been updated. DIJob will now try to rescale.'
       );
     });
   }
