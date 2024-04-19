@@ -41,7 +41,7 @@
       <tbody>
         <ng-container *ngFor="let jar of listOfJar; trackBy: trackById">
           <tr (click)="expandJar(jar)" class="clickable">
-            <td>{{ jar.name }}</td>
+            <td>{{ jar.name.substring(0, jar.name.lastIndexOf('.')) }}</td>
             <td>{{ jar.uploaded | date: 'yyyy-MM-dd, HH:mm:ss' }}</td>
             <td>
               <div *ngFor="let entries of jar.entry">

@@ -83,8 +83,7 @@ public class JarUploadHandler
         final Path fileUpload = uploadedFiles.iterator().next().toPath();
         return CompletableFuture.supplyAsync(
                 () -> {
-                    if (false) {
-                        // if (!fileUpload.getFileName().toString().endsWith(".jar")) {
+                    if (!fileUpload.getFileName().toString().endsWith(".jar")) {
                         throw new CompletionException(
                                 new RestHandlerException(
                                         "Only Jar files are allowed.",
